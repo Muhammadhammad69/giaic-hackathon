@@ -1,6 +1,17 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import {Oswald, Inter} from "next/font/google"
 import "./globals.css";
+
+const oswald = Oswald({
+  subsets: ['latin'],
+  variable: "--font-oswald",
+  weight: "700"
+});
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-satoshi"
+})
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${oswald.variable} ${inter.variable} antialiased`}
       >
         {children}
       </body>
