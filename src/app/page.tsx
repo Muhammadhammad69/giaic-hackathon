@@ -9,14 +9,6 @@ import { FooterSec } from "@/components/homepage/footer";
 
 
 export default function Home() {
-  const review = {
-    author: "hammad",
-    rating: 3,
-    verified: true,
-    width: "w-[400px]",
-    height: "h-[240px]"
-
-  }
   return (
     <>
     {/* <TopHeader />
