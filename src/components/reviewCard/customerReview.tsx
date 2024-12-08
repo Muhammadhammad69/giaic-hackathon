@@ -1,14 +1,7 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
 import { RiVerifiedBadgeFill } from "react-icons/ri";
-interface ReviewTypes{
-  author: string;
-  rating:number;
-  verified:true;
-  width:string;
-  height:string;
-  content:string;
-}
+
 export const ReviewCard: React.FC<{ review: { author: string; rating: number; verified: boolean; width: string; height: string; content: string } }> = ({ review }
 ) => {
   console.log(review);
