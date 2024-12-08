@@ -34,13 +34,23 @@ export const CustomerReviewSec = () => {
     <div>
       <div className="w-[95%] 2xl:w-[1400px] mx-auto my-8">
         <div className="flex justify-between items-center py-8">
-          <h1 className="uppercase text-[28px] sm:text-[38px] md:text-[48px] lg:text-[58px] font-bold font-oswald">Our Happy Customer</h1>
+          <h1 className="uppercase text-[28px] sm:text-[38px] md:text-[48px] lg:text-[58px] font-bold font-oswald">
+            Our Happy Customer
+          </h1>
           <div className="flex gap-x-2">
             <div className="bg-mainColor w-[2.5rem] h-[2.5rem] flex justify-center items-center rounded-[1.5rem] ">
-            <ArrowLeft size={28} strokeWidth={1.25} className="cursor-pointer hover:stroke-2"/>
+              <ArrowLeft
+                size={28}
+                strokeWidth={1.25}
+                className="cursor-pointer hover:stroke-2"
+              />
             </div>
             <div className="bg-mainColor w-[2.5rem] h-[2.5rem] flex justify-center items-center rounded-[1.5rem] ">
-              <ArrowRight size={28} strokeWidth={1.25} className="cursor-pointer hover:stroke-2" />
+              <ArrowRight
+                size={28}
+                strokeWidth={1.25}
+                className="cursor-pointer hover:stroke-2"
+              />
             </div>
           </div>
         </div>

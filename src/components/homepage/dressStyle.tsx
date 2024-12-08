@@ -6,13 +6,7 @@ import img2 from "../../../Images/dress-style-sec/image 13.png";
 import img3 from "../../../Images/dress-style-sec/image 12.png";
 import img4 from "../../../Images/dress-style-sec/image 14.png"
 export const DressStyleSec = () => {
-  const dressStyles = [
-    { label: "Casual", imageUrl: "/casual.jpg", width: 296, height: 424 },
-    { label: "Formal", imageUrl: "/formal.jpg", width: 455, height: 586 },
-    { label: "Party", imageUrl: "/party.jpg", width: 296, height: 424 },
-    { label: "Gym", imageUrl: "/gym.jpg", width: 296, height: 424 },
-  ];
-  const imgHeight = "h-[298px]"
+  
 
   return (
     <div>

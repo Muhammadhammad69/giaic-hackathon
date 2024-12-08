@@ -1,11 +1,9 @@
 import React from 'react'
-import Filter from '@/components/filterComponents/filter'
-import PriceRange from '@/components/filterComponents/priceRange'
+
 const page = () => {
   return (
     <>
-{/* <Filter />
-<PriceRange /> */}
+<h1>Welcome</h1>
     </>
   )
 }

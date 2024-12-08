@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
 import { X, Search, Menu, ShoppingCart, User, ChevronDown } from "lucide-react";
 export const TopHeader = () => {

@@ -1,4 +1,4 @@
-import { TopHeader, Header } from "@/components/homepage/header";
+
 import { Herosection } from "@/components/homepage/herosection";
 import { Logosection } from "@/components/homepage/logosection";
 import { Arrivalsection } from "@/components/homepage/arrivals";
@@ -11,8 +11,7 @@ import { FooterSec } from "@/components/homepage/footer";
 export default function Home() {
   return (
     <>
-    {/* <TopHeader />
-    <Header /> */}
+    
     <Herosection />
     <Logosection />
     <Arrivalsection />

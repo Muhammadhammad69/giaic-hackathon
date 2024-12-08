@@ -1,7 +1,17 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
 import { RiVerifiedBadgeFill } from "react-icons/ri";
-export const ReviewCard = ({ review }: any) => {
+interface ReviewTypes{
+  author: string;
+  rating:number;
+  verified:true;
+  width:string;
+  height:string;
+  content:string;
+}
+export const ReviewCard: React.FC<{ review: { author: string; rating: number; verified: boolean; width: string; height: string; content: string } }> = ({ review }
+) => {
+  console.log(review);
   return (
     <div className={`bg-white border-2 border-borderColor py-6 px-8 ${review.width} h-auto ${review.height} rounded-[20px] `}>
       <div className="flex flex-col gap-y-3  mb-2">
@@ -23,7 +33,7 @@ export const ReviewCard = ({ review }: any) => {
             <p>{review.content}</p>
         </div>
       </div>
-      <p>{review.text}</p>
+      <p>{review.content}</p>
     </div>
   );
 };

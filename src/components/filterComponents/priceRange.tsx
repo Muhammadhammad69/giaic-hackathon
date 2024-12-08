@@ -1,4 +1,4 @@
-import { ChevronUpIcon, ChevronDownIcon } from 'lucide-react';
+import { ChevronUpIcon } from 'lucide-react';
 
 const PriceRange = () => {
   return (
