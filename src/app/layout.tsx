@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import {Oswald, Inter} from "next/font/google"
 import "./globals.css";
+import { TopHeader, Header } from "@/components/homepage/header";
 
 const oswald = Oswald({
   subsets: ['latin'],
@@ -39,6 +40,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${oswald.variable} ${inter.variable} antialiased`}
       >
+        <TopHeader />
+        <Header />
         {children}
       </body>
     </html>

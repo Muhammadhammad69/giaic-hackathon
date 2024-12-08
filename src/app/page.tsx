@@ -5,6 +5,9 @@ import { Arrivalsection } from "@/components/homepage/arrivals";
 import { Topselling } from "@/components/homepage/topselling";
 import { DressStyleSec } from "@/components/homepage/dressStyle";
 import { CustomerReviewSec } from "@/components/homepage/customerReviewSec";
+import { FooterSec } from "@/components/homepage/footer";
+
+
 export default function Home() {
   const review = {
     author: "hammad",
@@ -16,14 +19,17 @@ export default function Home() {
   }
   return (
     <>
-    <TopHeader />
-    <Header />
+    {/* <TopHeader />
+    <Header /> */}
     <Herosection />
     <Logosection />
     <Arrivalsection />
     <Topselling />
     <DressStyleSec />
     <CustomerReviewSec />
+    <div className="w-[3rem] h-12"></div>
+    <FooterSec />
+    
     </>
   );
 }

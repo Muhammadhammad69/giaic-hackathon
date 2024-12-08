@@ -23,6 +23,7 @@ export default {
   		},
   		screens: {
   			xs: '490px',
+			cs:'870px',
   			dl: '980px'
   		},
   		borderRadius: {

@@ -21,6 +21,7 @@ export const TopHeader = () => {
   );
 };
 
+
 export const Header = () => {
   return (
     <div>
@@ -34,10 +35,10 @@ export const Header = () => {
 
         {/* Navigation Links */}
         <div className="hidden md:flex space-x-6 text-gray-700">
-          <a href="#" className="hover:text-black flex">
+          <Link href="/shop" className="hover:text-black flex">
             Shop
             <ChevronDown strokeWidth={1.75} />
-          </a>
+          </Link>
           <a href="#" className="hover:text-black">
             On Sale
           </a>
