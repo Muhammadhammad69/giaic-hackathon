@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import {Oswald, Inter} from "next/font/google"
 import "./globals.css";
 import { TopHeader, Header } from "@/components/homepage/header";
-
+import { FooterSec } from "@/components/homepage/footer";
 const oswald = Oswald({
   subsets: ['latin'],
   variable: "--font-oswald",
@@ -43,6 +43,7 @@ export default function RootLayout({
         <TopHeader />
         <Header />
         {children}
+        <FooterSec />
       </body>
     </html>
   );

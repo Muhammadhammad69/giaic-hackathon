@@ -4,7 +4,7 @@ import { RiVerifiedBadgeFill } from "react-icons/ri";
 
 export const ReviewCard: React.FC<{ review: { author: string; rating: number; verified: boolean; width: string; height: string; content: string } }> = ({ review }
 ) => {
-  console.log(review);
+  // console.log(review);
   return (
     <div className={`bg-white border-2 border-borderColor py-6 px-8 ${review.width} h-auto ${review.height} rounded-[20px] `}>
       <div className="flex flex-col gap-y-3  mb-2">

@@ -22,9 +22,10 @@ export const DressStyleSec = () => {
                   <Image
                     src={img1}
                     alt={"Casual"}
-                    width={1000}
-                    height={1000}
+                    width={298}
+                    height={298}
                     className= "w-full h-[190px] sm:h-[298px] md:h-[250px] xl:h-[298px] "
+                    // className="h-auto w-auto"
                   />
                 </div>
                 <div className="p-4 text-center absolute top-0 left-[10px] sm:left-[20px]">
@@ -38,9 +39,10 @@ export const DressStyleSec = () => {
                   <Image
                     src={img2}
                     alt={"Formal"}
-                    width={1000}
-                    height={1000}
+                    width={298}
+                    height={298}
                     className="w-full h-[190px] sm:h-[298px] md:h-[250px] xl:h-[298px]"
+                    // className="w-auto h-auto"
                   />
                 </div>
                 <div className="p-4 text-center absolute top-0 left-[10px] sm:left-[20px] ">
@@ -50,15 +52,16 @@ export const DressStyleSec = () => {
             </Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-[repeat(1,minmax(0,710px)),repeat(1,minmax(0,430px))] md:grid-rows-[minmax(0,250px)] xl:grid-rows-[minmax(0,298px)] gap-y-8 gap-x-8 lg:gap-x-12 justify-center">
-            <Link href={""} className="relative">
+            <Link href={""} className="relative w-full">
               <div className=" rounded-[20px] overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
                 <div className="relative">
                   <Image
                     src={img3}
                     alt={"Party"}
-                    width={1000}
-                    height={1000}
+                    width={298}
+                    height={298}
                     className="w-full h-[190px] sm:h-[298px] md:h-[250px] xl:h-[298px]"
+                   
                   />
                 </div>
                 <div className="p-4 text-center absolute top-0 left-[10px] sm:left-[20px]">
@@ -72,9 +75,10 @@ export const DressStyleSec = () => {
                   <Image
                     src={img4}
                     alt={"Gym"}
-                    width={1000}
-                    height={1000}
+                    width={298}
+                    height={298}
                     className="w-full h-[190px] sm:h-[298px] md:h-[250px] xl:h-[298px]"
+                    // className="w-auto "
                   />
                 </div>
                 <div className="p-4 text-center absolute top-0 left-[10px] sm:left-[20px] ">

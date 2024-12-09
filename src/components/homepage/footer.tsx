@@ -13,7 +13,7 @@ import { NewsletterSection } from "../commoncomponents/newsletter";
 export const FooterSec = () => {
   return (
     <footer className="bg-mainColor dark:bg-gray-900 text-satoshi relative mt-20 flex flex-col justify-center items-center ">
-      <div className="absolute w-[100%] 2xl:w-[1400px] md:top-[-78px] ">
+      <div className="absolute w-[100%] 2xl:w-[1400px] top-[-120px] md:top-[-78px] ">
       <NewsletterSection  />
       </div>
       <div className="mx-auto w-[95%] 2xl:w-[1400px]  sm:px-8 dl:px-0  pb-6 lg:pb-8 pt-[12rem] md:pt-[9rem] ">

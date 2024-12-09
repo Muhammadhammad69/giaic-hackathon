@@ -1,54 +1,77 @@
 import React from "react";
 import { Star, StarHalf } from "lucide-react";
 import Image from "next/image";
-import productImg from "../../../Images/product-imges/image 8.png"
-export const ProductCard: React.FC = () => {
+
+interface ProductInfo {
+  image: string;
+  title: string;
+  rating: number;
+  halfRating?: boolean;
+  price: number;
+  discountPrice?: number;
+  discountPercentage?: string;
+}
+
+export const ProductCard: React.FC<{ productInfo: ProductInfo }> = ({
+  productInfo,
+}) => {
+  // console.log(productInfo);
   return (
-    <div className="max-w-[295px] overflow-hidden mx-auto">
+    <div className="w-full overflow-hidden mx-auto">
       {/* Image Section */}
-      <div className="  w-[100%] ">
+      <div className=" p-2  ">
         <Image
-          src={productImg}
-          width={1000}
-          height={1000}
-          alt="Skinny Fit Jeans"
-          className="w-full object-cover rounded-[2rem] h-[298px]"
+          src={`${productInfo.image}`}
+          width={298}
+          height={298}
+          alt={`${productInfo.title}`}
+          // className="object-cover rounded-[2rem] h-[auto] w-[172px]  md:w-[298px]   lg:w-[310px] xl:w-[295px] "
+          className="rounded-[2rem]"
         />
       </div>
 
       {/* Details Section */}
       <div className="px-4 pb-4 mt-4 ">
         {/* Title */}
-        <h3 className="text-lg font-semibold text-black font-satoshi text-[20px]">
-          Skinny Fit Jeans
+        <h3 className=" font-semibold text-black font-satoshi text-[16px] dl:text-[20px]">
+          {productInfo.title}
         </h3>
 
         {/* Rating */}
         <div className="flex items-center gap-x-3 text-sm text-gray-600 mt-1">
           <div className="flex items-center text-yellow-500">
-            {[...Array(3)].map((_, i) => (
+            {[...Array(productInfo.rating)].map((_, i) => (
               <Star key={i} size={16} fill="currentColor" />
             ))}
             {/* <Star size={16} className="text-gray-300" />Partial Star */}
-            <StarHalf
+            {productInfo.halfRating && (
+              <StarHalf
                 size={16}
                 fill="currentColor"
                 className=" text-yellow-500"
-                 // Half-filled
+                // Half-filled
               />
+            )}
           </div>
-          <span className="text-[14px] font-satoshi">
-            <span className="text-black">3.5</span>
-            /5</span>
+          <span className="text-[12px] sm:text-[14px] font-satoshi">
+            <span className="text-black">{productInfo.rating}
+              {productInfo.halfRating && <span>.5</span>}
+            </span>
+            /5
+          </span>
         </div>
 
         {/* Price and Discount */}
-        <div className="flex items-center space-x-2 mt-2 font-satoshi">
-          <span className="text-[24px] font-bold text-black">$240</span>
-          <span className="line-through text-[24px] font-bold  text-gray-500">$260</span>
-          <span className="bg-red-100 text-[#FF3333]  text-sm font-semibold px-4 py-1 rounded-2xl">
-            -20%
-          </span>
+        <div className="flex items-center space-x-2 mt-2 font-satoshi text-[16px] xxs:text-[20px] lg:text-[24px] ">
+          <span className="font-bold text-black">${productInfo.price}</span>
+          {productInfo.discountPrice && (
+            <span className="line-through  font-bold  text-gray-500">${productInfo.discountPrice}</span>
+          )}
+          {productInfo.discountPercentage && (
+            <span className="bg-red-100 text-[#FF3333] text-[10px] md:text-[12px] font-normal md:font-semibold px-1 md:px-2  py-1 rounded-xl md:rounded-2xl   ">
+              {productInfo.discountPercentage}
+            </span>
+          )}
         </div>
       </div>
     </div>

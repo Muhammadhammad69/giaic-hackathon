@@ -21,7 +21,6 @@ export const TopHeader = () => {
   );
 };
 
-
 export const Header = () => {
   return (
     <div>
@@ -29,29 +28,31 @@ export const Header = () => {
         {/* Logo */}
 
         <div className="text-[32px] font-oswald flex space-x-2">
-          <Menu strokeWidth={1.75} className="self-center sm:hidden"/>
-          <h1>SHOP.CO</h1>
+          <Menu strokeWidth={1.75} className="self-center sm:hidden" />
+          <Link href={"./"}>
+            <h1>SHOP.CO</h1>
+          </Link>
         </div>
 
         {/* Navigation Links */}
-        <div className="hidden md:flex space-x-6 text-gray-700">
+        <div className="hidden cs:flex space-x-6 text-gray-700">
           <Link href="/shop" className="hover:text-black flex">
             Shop
             <ChevronDown strokeWidth={1.75} />
           </Link>
-          <a href="#" className="hover:text-black">
+          <Link href="#" className="hover:text-black">
             On Sale
-          </a>
-          <a href="#" className="hover:text-black">
+          </Link>
+          <Link href="#" className="hover:text-black">
             New Arrivals
-          </a>
-          <a href="#" className="hover:text-black">
+          </Link>
+          <Link href="#" className="hover:text-black">
             Brands
-          </a>
+          </Link>
         </div>
 
         {/* Search Bar */}
-        <div className="hidden sm:flex items-center bg-gray-100 border border-gray-300 rounded-full px-4 py-2 w-full max-w-[60%] md:max-w-[30%]  ">
+        <div className="hidden sm:flex items-center bg-gray-100 border border-gray-300 rounded-full px-4 py-2 w-full max-w-[60%] cs:max-w-[30%]  ">
           <Search className="text-gray-400 mr-2" />
           <input
             type="text"
@@ -61,7 +62,7 @@ export const Header = () => {
         </div>
 
         {/* Icons */}
-        <div className="flex items-center space-x-4 text-gray-700">
+        <div className="flex items-center space-x-3 text-gray-700">
           <Search className="hover:text-black  sm:hidden" />
           <ShoppingCart className="hover:text-black cursor-pointer" />
           <User className="hover:text-black cursor-pointer stroke-2" />

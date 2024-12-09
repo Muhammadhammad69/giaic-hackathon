@@ -1,7 +1,7 @@
 import { Star, StarHalf } from "lucide-react";
 import Image from "next/image";
 import productImg1 from "../../../Images/product-imges/image 7.png";
-import productImg2 from "../../../Images/product-imges/image 8.png";
+import productImg2 from "../../../Images/category-image/image 11.png";
 import productImg3 from "../../../Images/product-imges/image 9.png";
 import productImg4 from "../../../Images/product-imges/image 10.png";
 export const Arrivalsection = () => {
@@ -9,7 +9,7 @@ export const Arrivalsection = () => {
     <div>
       <div className="w-[95%] 2xl:w-[1400px] mx-auto">
         <div className="my-8">
-          <h1 className="font-oswald text-[48px] font-bold text-center">
+          <h1 className="uppercase font-oswald text-[48px] font-bold text-center">
             New Arrivals
           </h1>
         </div>
@@ -19,10 +19,11 @@ export const Arrivalsection = () => {
             <div className="">
               <Image
                 src={productImg1}
-                width={1000}
-                height={1000}
+                width={300}
+                height={300}
                 alt="T-SHIRT WITH TAPE DETAILS"
-                className="xs:w-full object-cover rounded-[2rem] h-[240px] sm:h-[298px]"
+                // xs:w-full h-[240px] sm:h-[298px]
+                className=" object-cover rounded-[2rem] "
               />
             </div>
 
@@ -70,13 +71,14 @@ sm:text-[24px]"
           </div>
           <div className=" overflow-hidden mx-auto">
             {/* Image Section */}
-            <div className="   ">
+            <div className="  ">
               <Image
                 src={productImg2}
-                width={1000}
-                height={1000}
+                width={300}
+                height={300}
                 alt="Skinny Fit Jeans"
-                className="object-cover rounded-[2rem] h-[240px] sm:h-[298px]"
+                // h-[240px] sm:h-[298px]
+                className="object-cover rounded-[2rem]  h-[240px] sm:h-[298px]"
               />
             </div>
 
@@ -124,10 +126,11 @@ sm:text-[24px]"
             <div className="  w-[100%] ">
               <Image
                 src={productImg3}
-                width={1000}
-                height={1000}
+                width={300}
+                height={300}
                 alt="Checkered Shirt"
-                className=" object-cover rounded-[2rem] h-[199px] xs:h-[240px] sm:h-[298px]"
+                // h-[199px] xs:h-[240px] sm:h-[298px]
+                className=" object-cover rounded-[2rem]"
               />
             </div>
 
@@ -175,10 +178,11 @@ sm:text-[24px]"
             <div className="  w-[100%] ">
               <Image
                 src={productImg4}
-                width={1000}
-                height={1000}
+                width={300}
+                height={300}
                 alt="Sleeve Striped T-Shirt"
-                className="w-full object-cover rounded-[2rem]  h-[199px] xs:h-[240px] sm:h-[298px]"
+                // w-full h-[199px] xs:h-[240px] sm:h-[298px]
+                className=" object-cover rounded-[2rem] "
               />
             </div>
 

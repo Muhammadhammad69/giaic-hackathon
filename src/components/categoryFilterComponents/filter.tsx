@@ -1,9 +1,9 @@
 import { ChevronRightIcon } from "lucide-react";
 import { SlidersHorizontal } from "lucide-react";
-const Filter = () => {
+export const Filter = () => {
   return (
-    <div className="w-[295px] bg-red-500 ml-4">
-      <div className="bg-white shadow-md mx-auto p-4 w-[248px]">
+    
+      <div className="bg-white  mx-auto  w-[248px]">
         <div className="flex justify-between font-satoshi text-[20px] font-bold ">
           <h2 className="text-lg font-medium mb-4">Filters</h2>
           <SlidersHorizontal />
@@ -44,8 +44,8 @@ const Filter = () => {
         </div>
         <hr className="mt-4 mb-4"/>
       </div>
-    </div>
+    
   );
 };
 
-export default Filter;
+
