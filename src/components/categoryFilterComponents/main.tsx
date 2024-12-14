@@ -6,7 +6,7 @@ import {SizeSelector} from "./sizeSelector"
 export const MainFilter = () =>{
 return(
     <div className="w-[295px] min-h-[600px] max-h-[1330px] border py-6 rounded-[20px] border-borderColor">
-        <Filter/>
+        <Filter />
         <StaticPriceRange />
         <ColorPicker />
         <SizeSelector />

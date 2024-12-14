@@ -1,7 +1,8 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import { X, Search, Menu, ShoppingCart, User, ChevronDown } from "lucide-react";
+import { X, Search, ShoppingCart, User, ChevronDown } from "lucide-react";
+import Sidebar from "../sidebar";
 export const TopHeader = () => {
   return (
     <div className="bg-black">
@@ -27,10 +28,13 @@ export const Header = () => {
       <nav className="w-[95%] 2xl:w-[1400px] flex justify-between items-center   py-4 mx-auto">
         {/* Logo */}
 
-        <div className="text-[32px] font-oswald flex space-x-2">
-          <Menu strokeWidth={1.75} className="self-center sm:hidden" />
+        <div className=" font-oswald items-center flex ">
+          {/* <Menu strokeWidth={1.75} className="self-center sm:hidden" /> */}
+          <Sidebar />
+          
           <Link href={"./"}>
-            <h1>SHOP.CO</h1>
+          
+            <h1 className="text-[32px] ">SHOP.CO</h1>
           </Link>
         </div>
 
@@ -64,7 +68,9 @@ export const Header = () => {
         {/* Icons */}
         <div className="flex items-center space-x-3 text-gray-700">
           <Search className="hover:text-black  sm:hidden" />
+          <Link href={"/cart"}>
           <ShoppingCart className="hover:text-black cursor-pointer" />
+          </Link>
           <User className="hover:text-black cursor-pointer stroke-2" />
         </div>
       </nav>

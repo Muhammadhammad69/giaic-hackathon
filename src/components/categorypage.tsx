@@ -14,7 +14,7 @@ export const CategoryPage = () => {
           <CategoryCards />
           <hr className="mt-4"/>
           <Pagination />
-          <div className="w-24 h-24 md:w-12 md:h-12"></div>
+          {/* <div className="w-24 h-24 md:w-12 md:h-12"></div> */}
         </div>
       </div>
       

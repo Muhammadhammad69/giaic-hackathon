@@ -5,7 +5,7 @@ import { ChevronDownIcon, ChevronUpIcon, Check } from "lucide-react";
 export const ColorPicker = () => {
   const [icon, setIcon] = useState(false);
   return (
-    <div className="bg-white w-[248px] mx-auto ">
+    <div className="bg-white w-[100%] sm:w-[248px] mx-auto ">
       <div
         className="flex justify-between  cursor-pointer"
         onClick={() => {

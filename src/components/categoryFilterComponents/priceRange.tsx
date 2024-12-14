@@ -9,7 +9,7 @@ export const StaticPriceRange: React.FC = () => {
   
 
   return (
-    <div className="bg-white mx-auto w-[248px] font-satoshi ">
+    <div className="bg-white mx-auto w-[100%] sm:w-[248px] font-satoshi ">
       <div className="flex justify-between  cursor-pointer" onClick={()=> {
         setIcon(!icon)
       }}>

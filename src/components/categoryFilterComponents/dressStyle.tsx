@@ -5,7 +5,7 @@ import { useState } from "react";
 export const DressStyle = () => {
   const [icon, setIcon] = useState(false);
   return (
-    <div className="bg-white mx-auto  w-[248px] font-satoshi">
+    <div className="bg-white mx-auto  w-[100%] sm:w-[248px] font-satoshi">
       <div
         className="flex justify-between items-center cursor-pointer"
         onClick={() => {
@@ -36,9 +36,9 @@ export const DressStyle = () => {
           </div>
           {/* Rest of the filter options */}
         </div>
-        <button className="w-full bg-mainColor border border-borderColor font-satoshi text-[14px] h-[3rem]   rounded-[2rem] mt-4 hover:bg-black hover:text-white shadow-none font-medium">Apply Filter</button>
         </>
       )}
+      <button className="w-full bg-mainColor border border-borderColor font-satoshi text-[14px] h-[3rem]   rounded-[2rem] mt-4 hover:bg-black hover:text-white shadow-none font-medium">Apply Filter</button>
       
     </div>
   );

@@ -14,7 +14,7 @@ export default function Home() {
       <Topselling />
       <DressStyleSec />
       <CustomerReviewSec />
-      <div className="w-[3rem] h-12"></div>
+      
     </>
   );
 }

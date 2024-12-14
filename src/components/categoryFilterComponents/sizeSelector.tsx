@@ -5,7 +5,7 @@ import { useState } from "react";
 export const SizeSelector = () => {
   const [icon, setIcon] = useState(false);
   return (
-    <div className="bg-white   mx-auto w-[248px]">
+    <div className="bg-white   mx-auto w-[100%] sm:w-[248px]">
       <div
         className="flex justify-between  cursor-pointer"
         onClick={() => {

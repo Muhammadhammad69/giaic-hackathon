@@ -12,7 +12,9 @@ import payIcon5 from "../../../Images/payment-icons/G Pay.png";
 import { NewsletterSection } from "../commoncomponents/newsletter";
 export const FooterSec = () => {
   return (
-    <footer className="bg-mainColor dark:bg-gray-900 text-satoshi relative mt-20 flex flex-col justify-center items-center ">
+    <>
+   <div className="w-[3rem] h-24"></div>
+    <footer className="bg-mainColor flex dark:bg-gray-900 text-satoshi relative mt-20  flex-col justify-center items-center ">
       <div className="absolute w-[100%] 2xl:w-[1400px] top-[-120px] md:top-[-78px] ">
       <NewsletterSection  />
       </div>
@@ -21,7 +23,7 @@ export const FooterSec = () => {
         <div className="grid grid-cols-[object-fit] dl:grid-cols-[minmax(0,280px),repeat(1,minmax(0,auto))] justify-center dl:justify-normal justify-items-start dl:justify-items-stretch gap-y-6 dl:gap-0">
           <div className="mb-6 md:mb-0 flex flex-col gap-y-[35px]">
             <div className="flex flex-col gap-y-[25px]">
-              <Link href={""} className="">
+              <Link href={"/"} className="">
                 <span className=" text-[66px] dl:text-[34px] font-bold font-oswald whitespace-nowrap dark:text-white">
                   Shop.co
                 </span>
@@ -190,5 +192,6 @@ export const FooterSec = () => {
         </div>
       </div>
     </footer>
+    </>
   );
 };

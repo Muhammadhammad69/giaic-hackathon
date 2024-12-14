@@ -19,15 +19,18 @@ export const ProductCard: React.FC<{ productInfo: ProductInfo }> = ({
   return (
     <div className="w-full overflow-hidden mx-auto">
       {/* Image Section */}
-      <div className=" p-2  ">
-        <Image
-          src={`${productInfo.image}`}
-          width={298}
-          height={298}
-          alt={`${productInfo.title}`}
-          // className="object-cover rounded-[2rem] h-[auto] w-[172px]  md:w-[298px]   lg:w-[310px] xl:w-[295px] "
-          className="rounded-[2rem]"
-        />
+      <div className="bg-[#f0eeed] flex items-center justify-center rounded-[2rem]  overflow-hidden h-[200px] xxs:h-[230px] md:h-[281px]">
+        
+          <Image
+            src={`${productInfo.image}`}
+            width={298}
+            height={298}
+            // layout="intrinsic"
+            alt={`${productInfo.title}`}
+            // className="object-cover rounded-[2rem] h-[auto] w-[172px]  md:w-[298px]   lg:w-[310px] xl:w-[295px] "
+            className="rounded-[2rem] object-contain h-full w-auto mx-auto "
+          />
+        
       </div>
 
       {/* Details Section */}
@@ -54,7 +57,8 @@ export const ProductCard: React.FC<{ productInfo: ProductInfo }> = ({
             )}
           </div>
           <span className="text-[12px] sm:text-[14px] font-satoshi">
-            <span className="text-black">{productInfo.rating}
+            <span className="text-black">
+              {productInfo.rating}
               {productInfo.halfRating && <span>.5</span>}
             </span>
             /5
@@ -65,7 +69,9 @@ export const ProductCard: React.FC<{ productInfo: ProductInfo }> = ({
         <div className="flex items-center space-x-2 mt-2 font-satoshi text-[16px] xxs:text-[20px] lg:text-[24px] ">
           <span className="font-bold text-black">${productInfo.price}</span>
           {productInfo.discountPrice && (
-            <span className="line-through  font-bold  text-gray-500">${productInfo.discountPrice}</span>
+            <span className="line-through  font-bold  text-gray-500">
+              ${productInfo.discountPrice}
+            </span>
           )}
           {productInfo.discountPercentage && (
             <span className="bg-red-100 text-[#FF3333] text-[10px] md:text-[12px] font-normal md:font-semibold px-1 md:px-2  py-1 rounded-xl md:rounded-2xl   ">
